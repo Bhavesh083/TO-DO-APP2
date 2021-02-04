@@ -20,7 +20,7 @@ body{
     grid-column: 8;
     grid-row: 2;
     border-radius: 10px;
-    width: 300px;
+    width: 330px;
     height: 110px;
     display: flex;
     flex-direction: column;
@@ -61,19 +61,19 @@ body{
     overflow-y: auto;
     overflow-x: hidden;
     border-radius: 10px;
-    width: 300px ;
+    width: 330px ;
     height: 380px;
     background-color: rgb(255, 254, 254);
 }
 .unfin span{
-    margin: 1rem;
+    margin: 1rem 0rem;
     font-size: larger;
     display: flex;
     justify-content: center;
 }
 .unfsp{
     color: rgba(0, 0, 0, 0.603);
-    margin: 1rem;
+    margin: 1rem 0rem 1rem 1rem;
     font-weight: bolder;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: larger;
@@ -88,7 +88,8 @@ body{
 .field span{
     overflow-y: hidden;
     overflow-x: auto;
-    max-width: 220px;
+    margin-left: 10px;
+    max-width: 260px;
 }
 .field button{
     margin-right: 10px;
@@ -100,8 +101,7 @@ body{
     box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.56);
     grid-column: 12;
  grid-row: 5;
-    width: 300px;
-    width: 300px ;
+    width: 330px;
     overflow-y: auto;
     overflow-x: hidden;
     height: 380px;
@@ -132,10 +132,12 @@ body{
     overflow-x: auto;
     max-width: 220px;
 }
-button:hover {
-    font-size: large;
+@media screen and (min-width:673px){
+    button:hover {
+        font-size: large;
+    }
 }
-@media screen and (max-width:620px){
+@media screen and (max-width:672px){
     body{
         overflow-y:auto;
         overflow-x: hidden;
@@ -153,5 +155,8 @@ button:hover {
     .fin{
         grid-row: 13;
        grid-column: 5;
+    }
+    button:hover {
+     color: red; 
     }
 }

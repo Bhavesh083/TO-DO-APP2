@@ -69,7 +69,7 @@ function App() {
                   }
             </div>
             <div className='fin'>
-                <span>Done</span>
+                <span>Completed</span>
                     {comp.map(t => {
                         return(<div className='findiv'>
                            <span>{t.text}</span> 
