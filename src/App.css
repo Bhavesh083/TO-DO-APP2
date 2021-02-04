@@ -1,38 +1,157 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    overflow: hidden;
+    width: 100%;
+    background: #ECE9E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+    box-sizing: border-box;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.bdy{
+    display: grid;
+    grid-template-columns: repeat(20,1fr);
+    grid-template-rows: repeat(20,50px)
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.addInp{
+    box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.56);
+    grid-column: 8;
+    grid-row: 2;
+    border-radius: 10px;
+    width: 300px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
-
-.App-link {
-  color: #61dafb;
+.addInp h3{
+    color: rgb(122, 122, 122);
+    margin: 1rem  1rem 0rem 1rem;
+    padding: 0;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.inpadd{
+    background-color: white;
+    margin: 1rem 1rem 1.3rem 1rem;
+}
+.inpadd input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 220px;
+    padding: 6px;
+    font-size: 16px;
+}
+.inpadd button{
+    color: rgb(94, 94, 94);
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding-right: 1rem;
+}
+.unfin{
+    box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.56);
+    grid-column: 8;
+    grid-row: 5;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-radius: 10px;
+    width: 300px ;
+    height: 380px;
+    background-color: rgb(255, 254, 254);
+}
+.unfin span{
+    margin: 1rem;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.unfsp{
+    color: rgba(0, 0, 0, 0.603);
+    margin: 1rem;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.field span{
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 220px;
+}
+.field button{
+    margin-right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.fin{
+    box-shadow: 3px 4px 14px 1px rgba(0, 0, 0, 0.56);
+    grid-column: 12;
+ grid-row: 5;
+    width: 300px;
+    width: 300px ;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 380px;
+    border-radius: 10px;
+    background-color: rgb(248, 241, 241);
+}
+.fin span{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 1rem;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
+.findiv button{
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.findiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.findiv span{
+    overflow-y: hidden;
+    overflow-x: auto;
+    max-width: 220px;
+}
+button:hover {
+    font-size: large;
+}
+@media screen and (max-width:620px){
+    body{
+        overflow-y:auto;
+        overflow-x: hidden;
+    }
+    .bdy{
+        display: grid;
+        grid-template-columns: repeat(9,1fr);
+    }    
+    .addInp{
+        grid-column: 5;
+    }
+    .unfin{
+       grid-column: 5;
+    }
+    .fin{
+        grid-row: 13;
+       grid-column: 5;
+    }
 }
